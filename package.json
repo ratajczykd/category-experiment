@@ -1,0 +1,28 @@
+{
+  "name": "category-experiment",
+  "version": "1.0.0",
+  "description": "an experiment testing categories",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratajczykd/category-experiment.git"
+  },
+  "keywords": [
+    "experiment",
+    "categorization"
+  ],
+  "author": "Dawid Ratajczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ratajczykd/category-experiment/issues"
+  },
+  "homepage": "https://github.com/ratajczykd/category-experiment#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1"
+  }
+}

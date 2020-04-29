@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title> Experiment </title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="column">
+<p2> Przeciągnij obrazki do pustych miejsc po prawej stronie. </p2>
+<p2>  W każdej grupie musi być przynajmniej jeden obrazek. </p2>
+<br><br>
+  <% for(var i=0; i < images.length; i++){ %>
+    <div class="empty">
+      <img src=<%= "/images/robots/"+images[i].name %> id=<%= "img"+i %> width="<%= images[i].width %>" height="<%= images[i].height %>" class="image">
+    </div>
+  <%}%>
+
+  </div>
+  <div class="column2">
+        <p2> Grupa 1. </p2> <br>
+        <div class="grupa1 empty"> </div>
+        <div class="grupa1 empty"> </div>
+        <div class="grupa1 empty"> </div>
+        <div class="grupa1 empty"> </div>
+        <div class="grupa1 empty"> </div> <br>
+        <div class="grupa1 empty"> </div>
+        <div class="grupa1 empty"> </div>
+        <div class="grupa1 empty"> </div>
+        <div class="grupa1 empty"> </div> <br> <br>
+
+        <p2> Grupa 2. </p2> <br>
+        <div class="grupa2 empty"> </div>
+        <div class="grupa2 empty"> </div>
+        <div class="grupa2 empty"> </div>
+        <div class="grupa2 empty"> </div>
+        <div class="grupa2 empty"> </div> <br>
+        <div class="grupa2 empty"> </div>
+        <div class="grupa2 empty"> </div>
+        <div class="grupa2 empty"> </div>
+        <div class="grupa2 empty"> </div>
+      </div><br>
+
+      <button id="next">Przejdź dalej</button>
+    </div>
+
+  <script src="script.js"></script>
+  <script src="saveChosen.js"></script>
+</body>
+</html>
